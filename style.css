@@ -70,25 +70,40 @@ button {
 }
 
 .hero {
-  flex-grow: 1;
-  background-color: #1F2937;
-  color: white;
-}
-
-.hero * {
-  margin: 0 128px;
-}
-
-.hero button {
-  margin: 16px 128px;
-  border-color: #3882F6;
-}
-
-.picture {
   display: flex;
-  flex: 1 1 auto;
-  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  background-color: #1F2937;
+  padding: 48px 128px;
+}
+
+.hero .left {
+  flex: 1;
+}
+
+.hero .right {
+  display: flex;
+  flex: 1;
+  height: 200px;
+  flex: 0 1 400px;
+  justify-content: center;
+  align-items: center;
   background-color: gray;
+  margin-left: 48px;
+}
+
+.hero .left * {
+  margin: 0;
+}
+
+.hero .right * {
+  margin: 0px;
+}
+
+.hero .left button {
+  margin-top: 16px;
+  border-color: #3882F6;
 }
 
 .info {
@@ -98,16 +113,18 @@ button {
 .card {
   text-align: center;
   height: 200px;
-  border: 1px solid red;
+  border: 2px solid #3882F6;
   flex: 0 1 200px;
   margin: 8px;
   padding: 8px;
 }
+
 .card-description {
   text-align: center;
   flex: 0 1 200px;
   margin: 0 16px 16px 16px;
 }
+
 .quote {
   background-color: #E5E7EB;
   text-align: center;
