@@ -15,7 +15,7 @@ ul {
 
 li a {
   text-decoration: none;
-  color: white;
+  color: #F9FAF8;
 }
 
 li a:hover {
@@ -26,9 +26,10 @@ button {
   height: fit-content;
   padding: 8px 32px;
   background-color: #3882F6;
-  color: white;
+  color: #F9FAF8;
   border-style: solid;
   border-width: 2px;
+  border-radius: 8px;
 }
 
 .header,
@@ -36,7 +37,7 @@ button {
   display: flex;
   align-items: center;
   background-color: #1F2937;
-  color:white;
+  color: #F9FAF8;
 }
 
 .header {
@@ -73,9 +74,25 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: white;
+  color: #F9FAF8;
   background-color: #1F2937;
   padding: 48px 128px;
+}
+
+.hero * {
+  margin: 0;
+  line-height: 1;
+}
+
+.hero * h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero * p {
+  padding: 16px 0;
+  font-size: 18px;
+  color: #E5E7EB;
 }
 
 .hero .left {
@@ -93,16 +110,7 @@ button {
   margin-left: 48px;
 }
 
-.hero .left * {
-  margin: 0;
-}
-
-.hero .right * {
-  margin: 0px;
-}
-
 .hero .left button {
-  margin-top: 16px;
   border-color: #3882F6;
 }
 
@@ -114,6 +122,7 @@ button {
   text-align: center;
   height: 200px;
   border: 2px solid #3882F6;
+  border-radius: 8px;
   flex: 0 1 200px;
   margin: 8px;
   padding: 8px;
@@ -127,7 +136,18 @@ button {
 
 .quote {
   background-color: #E5E7EB;
-  text-align: center;
+  padding: 0 128px;
+}
+
+.quote h4 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #1F2937;
+}
+
+.quote p {
+  font-size: 28px;
+  text-align: right;
 }
 
 .action {
@@ -139,6 +159,8 @@ button {
   margin: 48px 128px;
   background-color: #3882F6;
   color: white;
+  border: 2px solid #3882F6;
+  border-radius: 8px;
 }
 
 .action .container-row button {
